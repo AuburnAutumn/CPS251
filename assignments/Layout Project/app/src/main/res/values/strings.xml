@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AngelaBonkLayoutProject</string>
+    <string name="button1">Button 1</string>
+    <string name="button2">Button 2</string>
+    <string name="button3">Button 3</string>
+    <string name="textView">This is my layout project</string>
+    <string name="checkBox1">Check Box 1</string>
+    <string name="checkBox2">Check Box 2</string>
+    <string name="checkBox3">Check Box 3</string>
+    <string name="checkBox4">Check Box 4</string>
+    <string name="checkBox5">Check Box 5</string>
+    <string name="checkBox6">Check Box 6</string>
+    <string name="contentDescription"> A smiley kinda guy</string>
+
+</resources>
