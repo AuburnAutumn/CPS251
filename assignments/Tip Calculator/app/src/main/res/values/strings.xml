@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">tipCalculatorAngelaBonk</string>
+    <string name = "buttonText"> Calculate tip</string>
+    <string name = "textViewString"> Tip amounts will display here</string>
+    <string name = "numberInputString"> Enter bill total</string>
+</resources>
