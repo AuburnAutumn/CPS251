@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">nameRotation</string>
+    <string name="instructions">Please add a name:</string>
+    <string name="buttonText">Add name</string>
+    <string name="arrayPlaceholder">No names to display</string>
+    <string name="errorMessage">No name entered</string>
+    <string name="promptText">Enter name here</string>
+</resources>
