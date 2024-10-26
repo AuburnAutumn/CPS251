@@ -1,20 +1,18 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    //alias(libs.plugins.androidApplication)
-    //alias(libs.plugins.jetbrainsKotlinAndroid)
-    id ("androidx.navigation.safeargs")
 }
 
 android {
-    buildFeatures {
-        viewBinding = true
+
+    buildFeatures{
+        viewBinding=true
     }
-    namespace = "com.example.navigationproject"
+    namespace = "com.example.namerotation"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.navigationproject"
+        applicationId = "com.example.namerotation"
         minSdk = 28
         targetSdk = 34
         versionCode = 1
@@ -42,7 +40,7 @@ android {
 }
 
 dependencies {
-    implementation(libs.androidx.navigation.fragment.ktx)
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

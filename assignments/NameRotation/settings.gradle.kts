@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "NavigationProject"
+rootProject.name = "nameRotation"
 include(":app")

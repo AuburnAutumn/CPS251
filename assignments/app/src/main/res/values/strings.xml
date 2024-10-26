@@ -1,8 +1,12 @@
 <resources>
-    <string name="app_name">nameRotation</string>
-    <string name="instructions">Please add a name:</string>
-    <string name="buttonText">Add name</string>
-    <string name="arrayPlaceholder">No names to display</string>
-    <string name="errorMessage">No name entered</string>
-    <string name="promptText">Enter name here</string>
+    <string name="app_name">NavigationProject</string>
+    <string name="fragTwoString"> NO STRING PASSED IN</string>
+
+    <string name="firstButtonString">Display image 1</string>
+    <string name="secondButtonString">Display image 2</string>
+    <string name="thirdButtonString">Display image 3</string>
+
+    <string name="firstImageString">Image 1</string>
+    <string name="secondImageString">Image 2</string>
+    <string name="thirdImageString">Image 3</string>
 </resources>
