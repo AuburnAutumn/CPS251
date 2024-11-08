@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RecyclerViewProject</string>
+
+    <string name="textViewString">Filler</string>
+    <string name="detailPlaceHolder">Detail string</string>
+    <string name="contDes">Content description</string>
+    <string name="titleText">Title</string>
+</resources>

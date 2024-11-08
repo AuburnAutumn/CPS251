@@ -1,10 +1,13 @@
-package com.example.recyclerviewproject
+package com.example.recyclerviewwithintent
 
+
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
-import com.example.recyclerviewproject.databinding.CardViewBinding
+import com.example.recyclerviewwithintent.databinding.CardViewBinding
 
 class RecyclerAdapter(private val data: Data, private val viewModel: MainViewModel) : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
 
@@ -14,10 +17,21 @@ class RecyclerAdapter(private val data: Data, private val viewModel: MainViewMod
             // Set the click listener on the itemView
             itemView.setOnClickListener { v ->
                 val position = adapterPosition
+
                 if (position != RecyclerView.NO_POSITION) { // Check if position is valid
-                    Snackbar.make(v, "Click detected on item $position", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null)
-                        .show()
+                    //Used toast quite a bit for testing so it's commented out and not deleted
+                   //Snackbar.make(v, "Click detected on item $position", Snackbar.LENGTH_LONG)
+                        //.setAction("Action", null)
+                        //.show()
+
+                    val intent = Intent(itemView.context, SecondActivity::class.java)
+
+                    //Passing in values
+                    intent.putExtra("title", viewModel.getTitle(position))
+                    intent.putExtra("detail", viewModel.getDetails(position))
+                    intent.putExtra("imageResId", viewModel.getImage(position))
+
+                    startActivity(itemView.context, intent, null)
                 }
             }
         }
@@ -36,8 +50,6 @@ class RecyclerAdapter(private val data: Data, private val viewModel: MainViewMod
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        //holder.bind is referencing the bind function written above in the inner class
-        //Can I??? Possibly just shoot this through the Intent???
         holder.bind(viewModel.getTitle(position), viewModel.getDetails(position), viewModel.getImage(position))
     }
 
