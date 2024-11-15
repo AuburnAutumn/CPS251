@@ -11,17 +11,6 @@ class MainViewModel() : ViewModel() {
     private val shuffledDetails = arrayRandomize(data.details)
     private val shuffledImages = arrayRandomize(data.images)
 
-    /*create new arrays of ints, calculate size by the .size of the old arrays and repeat
-    picking random numbers. Then have the files look at them as the indexes of the old arrays.
-    Pass those numbers around.
-    He's also talking about 2d arrays a lot fyi, like a 2d array that lists the arrays and then the
-    new numbers
-    See if the MainViewModel is accessable from the other Activity honestly
-    Make life easier for me
-
-    The way he's talking makes me think I'll be able to access shuffled arrays, good
-     */
-
     /*
     private val shuffledTitles = data.titles.toList().shuffled()
     private val shuffledDetails = data.details.toList().shuffled()
