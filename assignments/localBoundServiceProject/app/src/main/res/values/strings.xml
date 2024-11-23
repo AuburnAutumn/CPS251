@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">localBoundServiceProject</string>
+    <string name="startButtonString">Start</string>
+    <string name="pauseButtonString">Pause</string>
+    <string name="resetButtonString">Reset</string>
+    <string name="defaultText">00:00:00</string>
+</resources>
